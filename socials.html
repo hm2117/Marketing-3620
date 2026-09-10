@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Socials | My Website</title>
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- =========================================
+         SOCIALS PAGE-SPECIFIC CSS
+         ========================================= -->
+
+    <style>
+
+        /* =========================================
+           SOCIALS GRID
+           ========================================= */
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+
+        /* =========================================
+           SOCIAL CARD
+           ========================================= */
+
+        .social-card {
+            border: 1px solid #222;
+            padding: 20px;
+            background-color: #f7f7f7;
+            transition: 0.2s ease;
+        }
+
+
+        .social-card:hover {
+            background-color: #eeeeee;
+        }
+
+
+        .social-card h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+
+
+        .social-card p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+
+        .social-card a {
+            color: #222;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+
+        .social-card a:hover {
+            text-decoration: none;
+        }
+
+
+        /* =========================================
+           SOCIAL ICON / LETTER
+           ========================================= */
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-size: 16px;
+            background-color: white;
+        }
+
+
+        /* =========================================
+           FEATURED SOCIAL SECTION
+           ========================================= */
+
+        .social-featured {
+            border: 1px solid #222;
+            padding: 25px;
+            margin-bottom: 30px;
+            background-color: #f5f5f5;
+        }
+
+
+        .social-featured h2 {
+            margin-top: 0;
+        }
+
+
+        /* =========================================
+           SOCIAL LIST
+           ========================================= */
+
+        .social-list {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+
+        .social-list li {
+            border-bottom: 1px solid #ccc;
+            padding: 12px 0;
+        }
+
+
+        .social-list li:last-child {
+            border-bottom: none;
+        }
+
+
+        .social-list a {
+            color: #222;
+            text-decoration: none;
+        }
+
+
+        .social-list a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* =========================================
+           MOBILE
+           ========================================= */
+
+        @media (max-width: 600px) {
+
+            .social-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         MAIN WEBSITE CONTAINER
+         ========================================= -->
+
+    <div class="site-wrapper">
+
+
+        <!-- =========================================
+             HEADER
+             ========================================= -->
+
+        <header class="site-header">
+
+
+            <!-- LOGO -->
+
+            <div class="logo">
+
+                <a href="index.html">
+                    My Website
+                </a>
+
+            </div>
+
+
+            <!-- WEBSITE DESCRIPTION -->
+
+            <div class="header-info">
+
+                <p>
+                    Connect with me online and follow my
+                    latest projects, updates, and creative work.
+                </p>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =========================================
+             SHARED JAVASCRIPT NAVIGATION
+             ========================================= -->
+
+        <div id="navigation"></div>
+
+
+
+        <!-- =========================================
+             THREE COLUMN PAGE LAYOUT
+             ========================================= -->
+
+        <div class="page-layout">
+
+
+            <!-- =====================================
+                 LEFT SIDEBAR
+                 ===================================== -->
+
+            <aside class="left-sidebar">
+
+
+                <h3>Explore</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About Me
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="socials.html">
+                            Socials
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <br>
+
+
+                <h3>Social Sections</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#socials">
+                            Social Media
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#professional">
+                            Professional
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#updates">
+                            Updates
+                        </a>
+                    </li>
+
+                </ul>
+
+
+            </aside>
+
+
+
+            <!-- =====================================
+                 MAIN SOCIALS CONTENT
+                 ===================================== -->
+
+            <main class="main-content">
+
+
+                <!-- =================================
+                     HERO
+                     ================================= -->
+
+                <div class="hero">
+
+                    <h1>
+                        Socials
+                    </h1>
+
+                </div>
+
+
+
+                <!-- =================================
+                     INTRODUCTION
+                     ================================= -->
+
+                <h1>Connect With Me</h1>
+
+                <p>
+                    Welcome to my social media page. This is where
+                    you can find links to my different social media
+                    accounts and online profiles.
+                </p>
+
+                <p>
+                    Following me on social media is a great way to
+                    keep up with new projects, website updates,
+                    creative work, and other things I am working on.
+                </p>
+
+
+
+                <!-- =================================
+                     FEATURED SOCIAL
+                     ================================= -->
+
+                <section id="socials">
+
+                    <div class="social-featured">
+
+                        <h2>Find Me Online</h2>
+
+                        <p>
+                            Choose one of the platforms below to
+                            connect with me and follow my latest
+                            updates.
+                        </p>
+
+                        <p>
+                            I regularly use social media to share
+                            projects, ideas, photographs, and
+                            updates.
+                        </p>
+
+                    </div>
+
+
+                    <!-- SOCIAL CARDS -->
+
+                    <div class="social-grid">
+
+
+                        <!-- INSTAGRAM -->
+
+                        <div class="social-card">
+
+                            <div class="social-icon">
+                                IG
+                            </div>
+
+                            <h3>
+                                Instagram
+                            </h3>
+
+                            <p>
+                                Follow me for photographs, creative
+                                work, personal updates, and visual
+                                content.
+                            </p>
+
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                Visit Instagram →
+
+                            </a>
+
+                        </div>
+
+
+
+                        <!-- GITHUB -->
+
+                        <div class="social-card">
+
+                            <div class="social-icon">
+                                GH
+                            </div>
+
+                            <h3>
+                                GitHub
+                            </h3>
+
+                            <p>
+                                Explore my coding projects,
+                                repositories, websites, and other
+                                development work.
+                            </p>
+
+                            <a
+                                href="https://github.com/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                Visit GitHub →
+
+                            </a>
+
+                        </div>
+
+
+
+                        <!-- LINKEDIN -->
+
+                        <div class="social-card">
+
+                            <div class="social-icon">
+                                LI
+                            </div>
+
+                            <h3>
+                                LinkedIn
+                            </h3>
+
+                            <p>
+                                Connect with me professionally and
+                                learn more about my education,
+                                experience, and skills.
+                            </p>
+
+                            <a
+                                href="https://www.linkedin.com/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                Visit LinkedIn →
+
+                            </a>
+
+                        </div>
+
+
+
+                        <!-- FACEBOOK -->
+
+                        <div class="social-card">
+
+                            <div class="social-icon">
+                                FB
+                            </div>
+
+                            <h3>
+                                Facebook
+                            </h3>
+
+                            <p>
+                                Connect with me and keep up with
+                                personal updates and announcements.
+                            </p>
+
+                            <a
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                Visit Facebook →
+
+                            </a>
+
+                        </div>
+
+
+
+                        <!-- YOUTUBE -->
+
+                        <div class="social-card">
+
+                            <div class="social-icon">
+                                YT
+                            </div>
+
+                            <h3>
+                                YouTube
+                            </h3>
+
+                            <p>
+                                Find videos, presentations, creative
+                                projects, and other visual content.
+                            </p>
+
+                            <a
+                                href="https://www.youtube.com/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                Visit YouTube →
+
+                            </a>
+
+                        </div>
+
+
+
+                        <!-- TIKTOK -->
+
+                        <div class="social-card">
+
+                            <div class="social-icon">
+                                TT
+                            </div>
+
+                            <h3>
+                                TikTok
+                            </h3>
+
+                            <p>
+                                Follow short-form creative content,
+                                updates, and other videos.
+                            </p>
+
+                            <a
+                                href="https://www.tiktok.com/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                Visit TikTok →
+
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     PROFESSIONAL ACCOUNTS
+                     ================================= -->
+
+                <section id="professional">
+
+                    <h2>Professional Profiles</h2>
+
+                    <p>
+                        My professional profiles provide additional
+                        information about my experience, education,
+                        projects, and skills.
+                    </p>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <strong>LinkedIn:</strong>
+
+                            <a
+                                href="https://www.linkedin.com/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                View my professional profile →
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <strong>GitHub:</strong>
+
+                            <a
+                                href="https://github.com/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                View my repositories →
+
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </section>
+
+
+
+                <!-- =================================
+                     UPDATES
+                     ================================= -->
+
+                <section id="updates">
+
+                    <h2>Stay Updated</h2>
+
+                    <p>
+                        I use my social media accounts to share
+                        updates about new projects, completed work,
+                        website changes, and other things I am
+                        interested in.
+                    </p>
+
+                    <p>
+                        If you would like to see what I am currently
+                        working on, check my social accounts
+                        regularly for new updates.
+                    </p>
+
+                </section>
+
+
+
+                <!-- =================================
+                     CONTACT
+                     ================================= -->
+
+                <h2>Want to Get in Touch?</h2>
+
+                <p>
+                    If you would like to contact me directly, visit
+                    the Contact page for additional ways to get in
+                    touch.
+                </p>
+
+                <p>
+
+                    <a href="contact.html">
+                        Go to Contact Page →
+                    </a>
+
+                </p>
+
+
+            </main>
+
+
+
+            <!-- =====================================
+                 RIGHT STICKY SIDEBAR
+                 ===================================== -->
+
+            <aside class="right-sidebar">
+
+
+                <div class="sticky-content">
+
+
+                    <!-- FOLLOW -->
+
+                    <div class="sidebar-section">
+
+                        <h3>Follow Me</h3>
+
+                        <p>
+                            Find me across these platforms.
+                        </p>
+
+                        <div class="social-links">
+
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Instagram">
+                                IG
+                            </a>
+
+                            <a
+                                href="https://github.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub">
+                                GH
+                            </a>
+
+                            <a
+                                href="https://www.linkedin.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn">
+                                LI
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- QUICK LINKS -->
+
+                    <div class="sidebar-section">
+
+                        <h3>Social Links</h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="#socials">
+                                    Social Media
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#professional">
+                                    Professional Profiles
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#updates">
+                                    Updates
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <!-- LATEST -->
+
+                    <div class="sidebar-section">
+
+                        <h3>Latest</h3>
+
+                        <p>
+                            Follow my accounts for the latest
+                            projects and updates.
+                        </p>
+
+                        <a href="projects.html">
+                            View Projects →
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- CONTACT -->
+
+                    <div class="sidebar-section">
+
+                        <h3>Contact</h3>
+
+                        <p>
+                            Want to reach me directly?
+                        </p>
+
+                        <a href="contact.html">
+                            Contact Me →
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </aside>
+
+
+        </div>
+
+
+
+        <!-- =========================================
+             FOOTER
+             ========================================= -->
+
+        <footer class="site-footer">
+
+
+            <p>
+                © 2026 My Website. All rights reserved.
+            </p>
+
+
+            <p>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="gallery.html">
+                    Gallery
+                </a>
+
+                <a href="socials.html">
+                    Socials
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="privacy.html">
+                    Privacy
+                </a>
+
+            </p>
+
+
+            <p>
+
+                Webmaster:
+
+                <a href="mailto:you@example.com">
+                    you@example.com
+                </a>
+
+            </p>
+
+
+        </footer>
+
+
+    </div>
+
+
+
+    <!-- =========================================
+         SHARED NAVIGATION JAVASCRIPT
+         ========================================= -->
+
+    <script src="nav.js"></script>
+
+
+</body>
+
+</html>
