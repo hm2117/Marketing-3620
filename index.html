@@ -1,172 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hannah's GitHub</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <title>WebStore</title>
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #0d1117;
-            color: #f0f6fc;
-            line-height: 1.6;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        header {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        .container {
-            max-width: 800px;
-        }
-
-        h1 {
-            font-size: 60px;
-            margin-bottom: 15px;
-        }
-
-        h1 span {
-            color: #58a6ff;
-        }
-
-        .subtitle {
-            font-size: 24px;
-            color: #8b949e;
-            margin-bottom: 25px;
-        }
-
-        .description {
-            font-size: 18px;
-            color: #c9d1d9;
-            margin-bottom: 35px;
-        }
-
-        .buttons a {
-            display: inline-block;
-            text-decoration: none;
-            color: white;
-            background: #238636;
-            padding: 12px 24px;
-            margin: 8px;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-
-        .buttons a:hover {
-            background: #2ea043;
-            transform: translateY(-2px);
-        }
-
-        .github {
-            background: #21262d !important;
-            border: 1px solid #30363d;
-        }
-
-        section {
-            padding: 70px 20px;
-            text-align: center;
-        }
-
-        section h2 {
-            font-size: 35px;
-            margin-bottom: 30px;
-            color: #58a6ff;
-        }
-
-        .skills {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .skill {
-            background: #161b22;
-            border: 1px solid #30363d;
-            padding: 12px 20px;
-            border-radius: 8px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #8b949e;
-            border-top: 1px solid #30363d;
-        }
-    </style>
 </head>
 
 <body>
 
-    <header>
-        <div class="container">
+    <div class="site-frame">
 
-            <h1>Hi, I'm <span>Hannah</span> 👋</h1>
+        <!-- Navigation is inserted here -->
+        <div id="site-nav"></div>
 
-            <p class="subtitle">
-                Welcome to my GitHub
-            </p>
 
-            <p class="description">
-                I'm learning, building, and experimenting with code.
-                Check out my projects and follow along with my journey!
-            </p>
+        <main class="page-content">
 
-            <div class="buttons">
-                <a href="https://github.com/YOUR-USERNAME"
-                   class="github"
-                   target="_blank">
-                    View My GitHub
-                </a>
+            <aside class="sidebar">
 
-                <a href="#projects">
-                    My Projects
-                </a>
+                <input
+                    class="sidebar-search"
+                    type="search"
+                    placeholder="Search">
+
+                <div class="sidebar-section">
+
+                    <div class="sidebar-title">
+                        Categories
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            <a href="#">Sale</a>
+                        </li>
+
+                        <li>
+                            <a href="#">New arrivals</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Classic</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Casual</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </aside>
+
+
+            <section class="main-content">
+
+                <div class="hero">
+
+                    <h1>
+                        New Collection
+                    </h1>
+
+                    <p>
+                        Discover our latest collection
+                        of carefully selected products.
+                    </p>
+
+                </div>
+
+
+                <div class="card-grid">
+
+                    <div class="card large">
+
+                        <div class="card-info">
+
+                            <div class="card-title">
+                                Limited Edition
+                            </div>
+
+                            <div class="card-price">
+                                $199.99
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <div class="card-info">
+
+                            <div class="card-title">
+                                Premium Package
+                            </div>
+
+                            <div class="card-price">
+                                $49.99
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <div class="card-info">
+
+                            <div class="card-title">
+                                Business Package
+                            </div>
+
+                            <div class="card-price">
+                                $29.99
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <div class="card-info">
+
+                            <div class="card-title">
+                                Standard Package
+                            </div>
+
+                            <div class="card-price">
+                                $9.99
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <footer class="footer">
+
+            <span>
+                © 2026 WebStore
+            </span>
+
+            <div class="footer-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Contact</a>
             </div>
 
-        </div>
-    </header>
+        </footer>
+
+    </div>
 
 
-    <section>
-        <h2>💻 Skills</h2>
-
-        <div class="skills">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Python</div>
-            <div class="skill">Git</div>
-            <div class="skill">GitHub</div>
-        </div>
-    </section>
-
-
-    <section id="projects">
-        <h2>🚀 Projects</h2>
-
-        <p>
-            More projects coming soon!
-        </p>
-    </section>
-
-
-    <footer>
-        © 2026 Hannah • Built with HTML & CSS
-    </footer>
+    <script src="navigation.js"></script>
 
 </body>
+
 </html>
