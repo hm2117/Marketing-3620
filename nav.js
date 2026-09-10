@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
             url: "index.html"
         },
         {
-            name: "Projects",
-            url: "projects.html"
+            name: "Products",
+            url: "products.html"
         },
         {
             name: "Gallery",
