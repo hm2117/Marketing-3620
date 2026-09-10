@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | My Website</title>
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Gallery-specific styling -->
+    <style>
+
+        /* =========================================
+           GALLERY GRID
+           ========================================= */
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+
+        /* =========================================
+           GALLERY ITEM
+           ========================================= */
+
+        .gallery-item {
+            border: 1px solid #222;
+            background-color: #f5f5f5;
+            overflow: hidden;
+        }
+
+
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+
+        .gallery-item img:hover {
+            transform: scale(1.04);
+        }
+
+
+        /* =========================================
+           IMAGE CAPTION
+           ========================================= */
+
+        .gallery-caption {
+            padding: 12px;
+            background-color: #fff;
+        }
+
+
+        .gallery-caption h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+
+        .gallery-caption p {
+            margin-bottom: 0;
+            font-size: 13px;
+        }
+
+
+        /* =========================================
+           FEATURED GALLERY IMAGE
+           ========================================= */
+
+        .featured-gallery-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border: 1px solid #222;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+
+        /* =========================================
+           MOBILE GALLERY
+           ========================================= */
+
+        @media (max-width: 600px) {
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-item img {
+                height: 220px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         MAIN WEBSITE CONTAINER
+         ========================================= -->
+
+    <div class="site-wrapper">
+
+
+        <!-- =========================================
+             HEADER
+             ========================================= -->
+
+        <header class="site-header">
+
+
+            <!-- LOGO -->
+
+            <div class="logo">
+
+                <a href="index.html">
+                    My Website
+                </a>
+
+            </div>
+
+
+            <!-- WEBSITE DESCRIPTION -->
+
+            <div class="header-info">
+
+                <p>
+                    A collection of images, creative work,
+                    projects, and memorable moments.
+                </p>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =========================================
+             SHARED JAVASCRIPT NAVIGATION
+             ========================================= -->
+
+        <div id="navigation"></div>
+
+
+
+        <!-- =========================================
+             THREE COLUMN PAGE LAYOUT
+             ========================================= -->
+
+        <div class="page-layout">
+
+
+            <!-- =====================================
+                 LEFT SIDEBAR
+                 ===================================== -->
+
+            <aside class="left-sidebar">
+
+
+                <h3>Explore</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About Me
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <br>
+
+
+                <h3>Gallery Sections</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#featured">
+                            Featured
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#creative">
+                            Creative Work
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#moments">
+                            Favorite Moments
+                        </a>
+                    </li>
+
+                </ul>
+
+
+            </aside>
+
+
+
+            <!-- =====================================
+                 MAIN GALLERY CONTENT
+                 ===================================== -->
+
+            <main class="main-content">
+
+
+                <!-- =================================
+                     HERO
+                     ================================= -->
+
+                <div class="hero">
+
+                    <h1>
+                        Gallery
+                    </h1>
+
+                </div>
+
+
+
+                <!-- =================================
+                     INTRODUCTION
+                     ================================= -->
+
+                <h1>My Gallery</h1>
+
+                <p>
+                    Welcome to my gallery. This page is a collection
+                    of images that represent my projects, interests,
+                    creative work, and memorable experiences.
+                </p>
+
+                <p>
+                    The gallery will continue to grow as I create new
+                    projects and collect more images. Each image
+                    provides a visual look at something that is
+                    meaningful or interesting to me.
+                </p>
+
+
+
+                <!-- =================================
+                     FEATURED IMAGE
+                     ================================= -->
+
+                <section id="featured">
+
+                    <h2>Featured</h2>
+
+                    <img
+                        src="images/featured.jpg"
+                        alt="Featured image"
+                        class="featured-gallery-image"
+                    >
+
+                    <p>
+                        This featured image represents one of the
+                        projects or experiences that I am currently
+                        highlighting on my website.
+                    </p>
+
+                </section>
+
+
+
+                <!-- =================================
+                     PROJECT GALLERY
+                     ================================= -->
+
+                <section id="projects">
+
+                    <h2>Project Gallery</h2>
+
+                    <p>
+                        Below are examples of projects and work that
+                        I have created.
+                    </p>
+
+
+                    <div class="gallery-grid">
+
+
+                        <!-- IMAGE 1 -->
+
+                        <div class="gallery-item">
+
+                            <img
+                                src="images/project1.jpg"
+                                alt="Project one"
+                            >
+
+                            <div class="gallery-caption">
+
+                                <h3>
+                                    Project One
+                                </h3>
+
+                                <p>
+                                    An example of my web design
+                                    and development work.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- IMAGE 2 -->
+
+                        <div class="gallery-item">
+
+                            <img
+                                src="images/project2.jpg"
+                                alt="Project two"
+                            >
+
+                            <div class="gallery-caption">
+
+                                <h3>
+                                    Project Two
+                                </h3>
+
+                                <p>
+                                    A creative project exploring
+                                    new ideas and techniques.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- IMAGE 3 -->
+
+                        <div class="gallery-item">
+
+                            <img
+                                src="images/project3.jpg"
+                                alt="Project three"
+                            >
+
+                            <div class="gallery-caption">
+
+                                <h3>
+                                    Project Three
+                                </h3>
+
+                                <p>
+                                    A project focused on creativity
+                                    and visual design.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- IMAGE 4 -->
+
+                        <div class="gallery-item">
+
+                            <img
+                                src="images/project4.jpg"
+                                alt="Project four"
+                            >
+
+                            <div class="gallery-caption">
+
+                                <h3>
+                                    Project Four
+                                </h3>
+
+                                <p>
+                                    An example of research and
+                                    digital communication.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     CREATIVE WORK
+                     ================================= -->
+
+                <section id="creative">
+
+                    <h2>Creative Work</h2>
+
+                    <p>
+                        This section contains visual examples of
+                        creative work, designs, experiments, and
+                        other ideas.
+                    </p>
+
+
+                    <div class="gallery-grid">
+
+
+                        <!-- IMAGE 5 -->
+
+                        <div class="gallery-item">
+
+                            <img
+                                src="images/creative1.jpg"
+                                alt="Creative work one"
+                            >
+
+                            <div class="gallery-caption">
+
+                                <h3>
+                                    Creative Work One
+                                </h3>
+
+                                <p>
+                                    An exploration of design and
+                                    visual creativity.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- IMAGE 6 -->
+
+                        <div class="gallery-item">
+
+                            <img
+                                src="images/creative2.jpg"
+                                alt="Creative work two"
+                            >
+
+                            <div class="gallery-caption">
+
+                                <h3>
+                                    Creative Work Two
+                                </h3>
+
+                                <p>
+                                    An experimental design project.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- IMAGE 7 -->
+
+                        <div class="gallery-item">
+
+                            <img
+                                src="images/creative3.jpg"
+                                alt="Creative work three"
+                            >
+
+                            <div class="gallery-caption">
+
+                                <h3>
+                                    Creative Work Three
+                                </h3>
+
+                                <p>
+                                    A visual project inspired by
+                                    different ideas and concepts.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- IMAGE 8 -->
+
+                        <div class="gallery-item">
+
+                            <img
+                                src="images/creative4.jpg"
+                                alt="Creative work four"
+                            >
+
+                            <div class="gallery-caption">
+
+                                <h3>
+                                    Creative Work Four
+                                </h3>
+
+                                <p>
+                                    Another example of my creative
+                                    work.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     FAVORITE MOMENTS
+                     ================================= -->
+
+                <section id="moments">
+
+                    <h2>Favorite Moments</h2>
+
+                    <p>
+                        The gallery can also be used to document
+                        experiences and moments that I want to
+                        remember and share.
+                    </p>
+
+
+                    <div class="gallery-grid">
+
+
+                        <!-- IMAGE 9 -->
+
+                        <div class="gallery-item">
+
+                            <img
+                                src="images/moment1.jpg"
+                                alt="Favorite moment one"
+                            >
+
+                            <div class="gallery-caption">
+
+                                <h3>
+                                    Favorite Moment
+                                </h3>
+
+                                <p>
+                                    A memorable experience.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- IMAGE 10 -->
+
+                        <div class="gallery-item">
+
+                            <img
+                                src="images/moment2.jpg"
+                                alt="Favorite moment two"
+                            >
+
+                            <div class="gallery-caption">
+
+                                <h3>
+                                    Another Memory
+                                </h3>
+
+                                <p>
+                                    One of my favorite moments.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     GALLERY DESCRIPTION
+                     ================================= -->
+
+                <h2>More Images Coming Soon</h2>
+
+                <p>
+                    I will continue adding images and projects to
+                    this gallery as my website develops. Check back
+                    for new photographs, designs, projects, and
+                    other creative work.
+                </p>
+
+                <p>
+
+                    <strong>
+                        Thanks for exploring my gallery!
+                    </strong>
+
+                </p>
+
+
+            </main>
+
+
+
+            <!-- =====================================
+                 RIGHT STICKY SIDEBAR
+                 ===================================== -->
+
+            <aside class="right-sidebar">
+
+
+                <div class="sticky-content">
+
+
+                    <!-- FEATURED -->
+
+                    <div class="sidebar-section">
+
+                        <h3>Featured</h3>
+
+                        <p>
+                            Check out the featured image and
+                            latest additions to the gallery.
+                        </p>
+
+                        <a href="#featured">
+                            View Featured →
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- GALLERY CATEGORIES -->
+
+                    <div class="sidebar-section">
+
+                        <h3>Categories</h3>
+
+                        <ul>
+
+                            <li>
+                                <a href="#projects">
+                                    Projects
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#creative">
+                                    Creative Work
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#moments">
+                                    Favorite Moments
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <!-- GALLERY INFO -->
+
+                    <div class="sidebar-section">
+
+                        <h3>Gallery Info</h3>
+
+                        <p>
+                            New images and projects will be added
+                            as the website develops.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- SOCIAL LINKS -->
+
+                    <div class="sidebar-section">
+
+                        <h3>Follow Me</h3>
+
+                        <div class="social-links">
+
+                            <a
+                                href="#"
+                                aria-label="Instagram">
+                                IG
+                            </a>
+
+                            <a
+                                href="#"
+                                aria-label="GitHub">
+                                GH
+                            </a>
+
+                            <a
+                                href="#"
+                                aria-label="LinkedIn">
+                                LI
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CONTACT -->
+
+                    <div class="sidebar-section">
+
+                        <h3>Get In Touch</h3>
+
+                        <p>
+                            Have a question about an image or
+                            project?
+                        </p>
+
+                        <a href="contact.html">
+                            Contact Me →
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </aside>
+
+
+        </div>
+
+
+
+        <!-- =========================================
+             FOOTER
+             ========================================= -->
+
+        <footer class="site-footer">
+
+
+            <p>
+                © 2026 My Website. All rights reserved.
+            </p>
+
+
+            <p>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="gallery.html">
+                    Gallery
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="privacy.html">
+                    Privacy
+                </a>
+
+            </p>
+
+
+            <p>
+
+                Webmaster:
+
+                <a href="mailto:you@example.com">
+                    you@example.com
+                </a>
+
+            </p>
+
+
+        </footer>
+
+
+    </div>
+
+
+
+    <!-- =========================================
+         SHARED NAVIGATION JAVASCRIPT
+         ========================================= -->
+
+    <script src="nav.js"></script>
+
+
+</body>
+
+</html>
