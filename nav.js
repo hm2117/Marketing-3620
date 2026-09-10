@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
             url: "gallery.html"
         },
         {
-            name: "Contact",
-            url: "contact.html"
+            name: "Socials",
+            url: "socials.html"
         },
         {
             name: "About",
