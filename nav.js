@@ -20,10 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
             url: "index.html"
         },
         {
-            name: "About",
-            url: "about.html"
-        },
-        {
             name: "Projects",
             url: "projects.html"
         },
@@ -34,6 +30,10 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             name: "Contact",
             url: "contact.html"
+        },
+        {
+            name: "About",
+            url: "about.html"
         }
     ];
 
